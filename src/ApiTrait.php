@@ -91,10 +91,7 @@ trait ApiTrait
 
     protected function setHeaders($headerParams): array
     {
-        $headers = $this->headerSelector->selectHeaders(
-            ['application/json', 'application/problem+json'],
-            ['application/json']
-        );
+        $headers = [];
 
         return array_merge($headerParams, $headers);
     }

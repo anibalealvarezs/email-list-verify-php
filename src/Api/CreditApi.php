@@ -42,7 +42,7 @@ class CreditApi
 
     protected function checkCreditRequest(): Request
     {
-        $secret = $this->apiKey;
+        $secret = $this->config->getApiKey();
 
         $resourcePath = self::END_POINT;
         $queryParams = [];

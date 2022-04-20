@@ -45,7 +45,7 @@ class EmailApi
         // verify the required parameter 'list_id' is set
         $this->checkRequiredParameter($email);
 
-        $secret = $this->apiKey;
+        $secret = $this->config->getApiKey();
 
         $resourcePath = self::END_POINT;
         $queryParams = [];

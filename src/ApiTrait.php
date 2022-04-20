@@ -78,7 +78,7 @@ trait ApiTrait
                 );
             }
 
-            return json_decode($response->getBody()->getContents());
+            return $response->getBody()->getContents();
 
         } catch (ApiException $e) {
             return $e->getMessage();

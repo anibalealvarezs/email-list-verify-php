@@ -48,13 +48,13 @@ composer require anibalealvarezs/email-list-verify-php
 ```php
 require_once('/path/to/EmailListVerifyPHP/vendor/autoload.php');
 
-$publica = new EmailListVerifyPHP\ApiClient();
+$verify = new EmailListVerifyPHP\ApiClient();
 
-$publica->setConfig([
+$verify->setConfig([
   'apiKey' => 'YOUR_API_KEY',
 ]);
 
-$response = $publica->users->getAllUsers();
+$response = $verify->email->checkEmail();
 print_r($response);
 ```
 

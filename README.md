@@ -54,7 +54,7 @@ $verify->setConfig([
   'apiKey' => 'YOUR_API_KEY',
 ]);
 
-$response = $verify->email->checkEmail();
+$response = $verify->email->checkEmail('email@email');
 print_r($response);
 ```
 
